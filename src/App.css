@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+body {
+  font-family: "Inter", serif;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.article p{
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 2;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (min-width: 640px) {
+  .article p {
+    font-size: 18px; /* Font size for screens wider than 700px */
+  word-spacing: 3px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.fromWtoB {
+  background-color: #ffffff;
+  transition: background-color 0.3s ease;
+  color: black;
 }
 
-.App-link {
-  color: #61dafb;
+.dark .fromWtoB {
+  background-color: black;
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  background-color: #ffffff;
+  transition: background-color 0.3s ease;
+  color: black;
 }
+
+.dark body {
+  background-color: #000000;
+  color: #fff;
+}
+
+textarea:focus {
+  outline: none;
+  height: auto;
+  resize: none;
+}
+
+.shadow {
+  box-shadow: rgba(100, 100, 111, 0.1) 0px 7px 29px 0px;
+}
+
+.dots {
+  opacity: 1;
+  background-image: radial-gradient(#eaeaea 0.8px, #ffffff 0.8px);
+  background-size: 16px 16px;
+}
+
+.article h2{
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 24px;
+}
+
+p{
+  font-size: 1rem;
+}
+
+
