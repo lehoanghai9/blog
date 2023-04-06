@@ -3,33 +3,7 @@ import React, { useEffect, useState } from "react";
 import ArticleHead from "./ArticleHead";
 
 function BlogContent({ setTitles }) {
-  const [currentSection, setCurrentSection] = useState("");
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const h2Elements = document.querySelectorAll("h2");
-      const currentElement = Array.from(h2Elements).find((element) => {
-        const { top, bottom } = element.getBoundingClientRect();
-        const { innerHeight } = window;
-        const middleOfViewport = innerHeight / 2;
-
-        return top <= middleOfViewport && bottom >= middleOfViewport;
-      });
-      setCurrentSection(currentElement?.textContent || "");
-    };
-
-    const h2Tags = document.querySelectorAll("h2");
-    const h2Array = Array.from(h2Tags).map((h2) => h2.textContent.trim());
-    setTitles(h2Array);
-
-    document.addEventListener("scroll", handleScroll);
-
-    return () => {
-      document.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  console.log(currentSection);
+  
   return (
     <div className="max-w-[700px] mx-5 sm:mx-10">
       <ArticleHead title="A nagy adat ereje: Hogyan használják az információkat a cégek a sikerhez" date="2023 Április 5." mins="3" />

@@ -4,7 +4,8 @@ module.exports = {
   theme: {  
     extend: {
       fontFamily: {
-        'Inter': ['Inter', 'sans-serif']
+        'Inter': ['Inter', 'sans-serif'],
+        'Mono' : ['Fira Code', "monospace"]
       },
       backgroundImage: {
         'herobg': "url('assets/icons/bg/hherobg.svg')",
