@@ -1,36 +1,62 @@
-# basecn
+# Personal Blog
 
-A modern React component library offering beautifully designed, accessible  [shadcn/ui](https://ui.shadcn.com/) components built on top of [Base UI](https://base-ui.com/), with advanced examples and customization options.
+A modern, interactive personal blog built with Next.js, featuring beautiful shader effects, internationalization, and a focus on deep technical explorations.
 
-basecn extends the popular shadcn/ui components with enhanced functionality, additional variants, and comprehensive documentation. Each component comes with multiple examples showcasing different use cases and styling options.
+This is my personal space where I write about the things I'm passionate about. Each piece aims to dive deep into topics while making complex concepts more accessible through interactive playgrounds, visualizations, and detailed walkthroughs.
 
 ## ✨ Features
 
-- 🎨 **Enhanced shadcn/ui Components** - All your favorite shadcn/ui components with additional variants and styling options
-- 🏗️ **Built on Base UI** - Leverages the robust foundation of MUI's Base UI for accessibility and performance
-- 📚 **Comprehensive Examples** - Multiple demo variations for each component showing different use cases
-- 🎯 **TypeScript First** - Full TypeScript support with proper type definitions
-- 🎨 **Tailwind CSS** - Styled with Tailwind CSS for easy customization
-- ♿ **Accessibility** - WAI-ARIA compliant components built for everyone
-- 🔧 **Customizable** - Easy to customize and extend with your own design system
+- 🎨 **Beautiful Shader Effects** - Custom WebGL shaders with dynamic loading animations
+- 🌍 **Internationalization** - Multi-language support with next-intl
+- 📝 **MDX Blog Posts** - Write posts in MDX with syntax highlighting and interactive components
+- 🎯 **TypeScript First** - Fully typed for better developer experience
+- 🎨 **Modern UI** - Built with Tailwind CSS and shadcn/ui components
+- ♿ **Accessible** - WAI-ARIA compliant and built for everyone
+- ⚡ **Performance** - Optimized with Next.js 16 and modern React
 
-## 🤝 Contributing
+## 🛠️ Tech Stack
 
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details on how to get started.
+- **Framework**: Next.js 16 with App Router
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui
+- **Content**: MDX with Fumadocs
+- **Internationalization**: next-intl
+- **Shaders**: Custom WebGL shaders
+- **Deployment**: Vercel
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+## 🚀 Getting Started
+
+```bash
+# Install dependencies
+pnpm install
+
+# Run development server
+pnpm dev
+
+# Build for production
+pnpm build
+
+# Start production server
+pnpm start
+```
+
+## 📝 Writing Posts
+
+Posts are written in MDX format and located in the `content/posts/` directory. Each post can include:
+
+- Interactive code examples
+- Custom React components
+- Syntax-highlighted code blocks
+- Embedded visualizations
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
 
 ## 🙏 Acknowledgments
 
 - [shadcn/ui](https://ui.shadcn.com/) - For the amazing component foundation
-- [Base UI](https://base-ui.com/) - For the robust accessibility layer
+- [Fumadocs](https://fumadocs.dev/) - For the MDX documentation framework
+- [Next.js](https://nextjs.org/) - For the amazing React framework
 - [Tailwind CSS](https://tailwindcss.com/) - For the utility-first CSS framework
 
