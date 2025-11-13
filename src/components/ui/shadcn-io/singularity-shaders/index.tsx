@@ -184,7 +184,7 @@ export const SingularityShaders = forwardRef<
         const loadElapsed = (Date.now() - loadStartTimeRef.current) / 1000.0;
         
         // Animate load progress: ease-out curve over 1.2 seconds
-        const rawProgress = Math.min(loadElapsed / 1.2, 1.0);
+        const rawProgress = Math.min(loadElapsed / 3.2, 1.0);
         const easedProgress = 1.0 - Math.pow(1.0 - rawProgress, 3); // Cubic ease-out
         setLoadProgress(easedProgress);
 
